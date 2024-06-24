@@ -36,5 +36,13 @@
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
+
+    {% block page-header %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+
+    {% block postload-js %}
+    {% endblock %}
   </body>
 </html>
