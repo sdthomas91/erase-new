@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    # Optional -- requires install using `django-allauth[socialaccount]`.
     'allauth.socialaccount',
 ]
 
@@ -65,8 +64,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth', #Required by AA
+                'django.template.context_processors.request', # Required by AA
+                'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
             ],
         },
